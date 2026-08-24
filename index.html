@@ -345,7 +345,7 @@ lucide.createIcons();
       try {
         const response = await fetch("https://portfolio-backend-ixvk.onrender.com", {
           method: 'POST',
-          body: new FormData(contactForm)
+          body: formData
         });
         const result = await response.json();
 
