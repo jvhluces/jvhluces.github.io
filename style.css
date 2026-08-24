@@ -555,6 +555,32 @@ section {
   transform: translateY(-3px);
   box-shadow: 0 10px 20px rgba(0, 170, 255, 0.3);
 }
+/* SOCIAL LINKS SA BABA NG CONTACT FORM */
+.socials {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  margin-top: 25px;
+  flex-wrap: wrap;
+}
+
+.socials a {
+  text-decoration: none;
+  padding: 10px 20px;
+  border: 2px solid #4F46E5; /* violet color */
+  color: #4F46E5;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 14px;
+  transition: all 0.3s ease;
+}
+
+.socials a:hover {
+  background: #4F46E5;
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(79, 70, 229, 0.3);
+}
 
 
 @media (max-width: 768px) { 
