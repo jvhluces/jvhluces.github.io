@@ -343,7 +343,7 @@ lucide.createIcons();
       formStatus.textContent = 'Sending...';
 
       try {
-        const response = await fetch("https://portfolio-backend-ixvk.onrender.com/contact", {
+        const response = await fetch("https://portfolio-backend-ixvk.onrender.com", {
           method: 'POST',
           body: new FormData(contactForm)
         });
