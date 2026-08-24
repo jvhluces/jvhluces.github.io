@@ -342,6 +342,8 @@ lucide.createIcons();
       submitButton.disabled = true;
       formStatus.textContent = 'Sending...';
 
+     const formData = new FormData(contactForm);
+
       try {
         const response = await fetch("https://portfolio-backend-ixvk.onrender.com/contact", {
           method: 'POST',
