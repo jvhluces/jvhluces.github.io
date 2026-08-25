@@ -82,9 +82,9 @@ nav {
 section { 
   min-height: 100vh; 
   width: 100%; 
-  display: flex; /* OK lang to, io-override natin sa services */
+  display: flex; 
   justify-content: center; 
-  align-items: center; /* DINAGDAG KO TO PARA GITNA */
+  align-items: center;
   scroll-snap-align: start; 
   padding: 100px 40px 40px; 
 } 
@@ -182,7 +182,7 @@ section {
 .about-section{ 
   color: white; 
   padding: 100px 120px; 
-  display: block !important; /* PARA HINDI MAG FLEX */
+  display: block !important; 
 } 
 
 .about{ 
@@ -198,7 +198,7 @@ section {
 } 
 
 .about-text h2{ 
-  font-size: 2.5rem; /* FIX: tinanggal ko space */
+  font-size: 2.5rem; 
   margin-bottom: 20px; 
 } 
 
@@ -284,7 +284,7 @@ section {
 
 .services-container{ 
   display: grid; 
-  grid-template-columns: repeat(3, 1fr); /* 3 COLUMNS */
+  grid-template-columns: repeat(3, 1fr); 
   gap: 30px; 
   max-width: 1100px; 
   margin: 0 auto; 
@@ -304,7 +304,7 @@ section {
   transform: translateY(-5px); 
 }
 
-.service-icon svg{ /* ITO YUNG MAGPAPAPUTI SA ICON */
+.service-icon svg{ 
   width: 28px;
   height: 28px;
   stroke: white;
@@ -375,7 +375,7 @@ section {
   background: #111;
   border: 1px solid #333;
   border-radius: 20px;
-  overflow: hidden; /* PARA HINDI LUMABAS YUNG IMAGE */
+  overflow: hidden; 
   text-align: left;
   transition: 0.3s;
   text-decoration: none;
@@ -497,7 +497,7 @@ section {
 .contact-card svg {
   width: 28px;
   height: 28px;
-  color: #00aaff; /* BLUE ICON */
+  color: #00aaff;
   flex-shrink: 0;
 }
 
@@ -541,7 +541,7 @@ section {
 }
 
 .contact-form button {
-  background: #00aaff; /* BLUE BUTTON MO */
+  background: #00aaff; 
   color: #0f172a;
   border: none;
   padding: 15px;
@@ -560,13 +560,13 @@ section {
 
 @media (max-width: 768px) { 
   body {
-    overflow-x: hidden; /* Para mawala yung side scroll */
+    overflow-x: hidden;
   }
 
   .hero, .home, .hero-section { 
     display: flex !important;
-    flex-direction: column !important; /* Pababa */
-    align-items: center !important; /* I-center */
+    flex-direction: column !important; 
+    align-items: center !important; 
     text-align: center;
     padding: 50px 20px;
     gap: 20px;
@@ -581,12 +581,12 @@ section {
   } 
  .nav-links {
   display: flex;
-  gap: 8px; /* mas maliit na pagitan */
+  gap: 8px; 
 }
 
 .nav-links a {
-  font-size: 8px; /* mas maliit na text para kasya lahat */
-  padding: 6px 12px; /* bawasan ang padding para hindi lumaki ang pill */
+  font-size: 8px; 
+  padding: 6px 12px; 
 }
 
   section { 
@@ -594,7 +594,7 @@ section {
   } 
 
  .hero {
-    flex-direction: column; /* Galing side by side, magiging pababa na */
+    flex-direction: column;
     text-align: center;
     padding: 40px 20px;
   }
@@ -602,15 +602,15 @@ section {
    .hero img {
     width: 170px !important;
     height: 170px !important;
-    border-radius: 50%; /* Bilog */
-    object-fit: cover; /* Para di ma-stretch yung pic */
-    box-shadow: 0 4px 15px rgba(0,0,0,0.2); /* Konting shadow para formal */
+    border-radius: 50%; 
+    object-fit: cover;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2); 
     margin-bottom: 10px;
-    order: 1; /* Sigurado na mauuna sya */
+    order: 1; 
   }
 
     .hero-text {
-    order: 2; /* Pangalawa si text */
+    order: 2; 
   }
 
   .hero h1 {
@@ -629,17 +629,17 @@ section {
     justify-content: center;
     gap: 12px;
     margin-top: 15px;
-    order: 3; /* Pangatlo yung buttons */
+    order: 3; 
   }
   
   .hero-buttons a {
-    padding: 12px 24px; /* Mas malaki para madali i-tap */
+    padding: 12px 24px; 
   }
  .socials {
     flex-direction: column; 
   }
   .socials a {
-    width: 80%; /* Mas malaki para madali i-tap ng daliri */
+    width: 80%; 
     margin: 0 auto;
   }
 
