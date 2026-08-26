@@ -559,9 +559,35 @@ section {
 
 
 @media (max-width: 768px) { 
+
+
+  html {
+        scroll-snap-type: y mandatory; /* Ibalik natin pero ayusin */
+    }
+
+   
+
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   body {
-    overflow-x: hidden; /* Para mawala yung side scroll */
-  }
+        overflow-y: scroll; /* Force proper scroll snap */
+    }
 
   .hero, .home, .hero-section { 
     display: flex !important;
@@ -581,23 +607,18 @@ section {
   } 
  .nav-links {
   display: flex;
-  gap: 8px; /* mas maliit na pagitan */
+  gap: 8px;
 }
 
 .nav-links a {
-  font-size: 8px; /* mas maliit na text para kasya lahat */
-  padding: 6px 12px; /* bawasan ang padding para hindi lumaki ang pill */
+  font-size: 8px; 
+  padding: 6px 12px; 
 }
 
-
     #home {
-        padding-top: 90px !important; /* Sakto lang para di matakpan ng nav */
-        padding-bottom: 40px !important; /* Bawasan baba */
+        padding-top: 90px !important;
+        padding-bottom: 40px !important;
     }
-
-   
-
-
     
 
     .hero-text .desc {
@@ -609,43 +630,17 @@ section {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  section {
-        min-height: auto !important; /* Tanggalin yung 100vh sa mobile */
-        padding: 80px 20px 40px !important; /* Bawasan padding */
+ section {
+        min-height: 100vh !important; /* Ibalik yung full screen */
+        padding: 90px 20px 40px !important; /* 90px para sa nav */
+        scroll-snap-align: start; /* Dito sya hihinto kada section */
+        display: flex !important;
+        flex-direction: column;
+        justify-content: center; /* I-center vertically yung laman */
     }
 
-
-    .hero {
-        min-height: auto !important; /* Tanggalin 90vh */
-        padding: 20px !important; /* Masikip na padding */
+ .hero {
+        min-height: auto !important;
         gap: 20px !important;
     }
 
@@ -798,8 +793,7 @@ section {
   
   }
    .about-section {
-        padding-top: 40px !important; /* Dikitin sa home */
-        padding-bottom: 80px !important;
+        padding-top: 90px !important; /* Same padding para pantay */
     }
   .about-image{
     display: none !important;
@@ -864,4 +858,3 @@ section {
     padding: 4px 10px !important;
   }
 }
-
