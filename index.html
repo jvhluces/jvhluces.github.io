@@ -20,7 +20,7 @@
             Jah
         </div>
 
-         <div class="menu-toggle" id="mobile-menu">
+         <div class="menu-toggle" id="mobile-menu" onclick="toggleMenu">
     <span class="bar"></span>
     <span class="bar"></span>
     <span class="bar"></span>
@@ -114,7 +114,7 @@
                     <strong>My Phone</strong><p>+63 938 277 5728</p>
                 </div>
 
-                <a href="assets/JANINE_LUCES_CV.pdf" download="Janine_Luces_CV.pdf" class="resume-btn"> Download CV </a>
+                <a href="assets/Janine_Luces_CV.pdf" download="Janine_Luces_CV.pdf" class="resume-btn"> Download CV </a>
             </div>
 
            
@@ -127,7 +127,7 @@
         <div class="services-container">
             
             <div class="service-card">
-                <div class="service-icon"><i data-lucide="server"></i></div> <!-- Backend -->
+                <div class="service-icon"><i data-lucide="server"></i></div> 
                     <h3>Backend Development</h3>
                     <p>Building fast, secure, and scalable APIs and server-side logic using FastAPI, Python and databases to power your applications. </p>
                 <div class="service-tags">
@@ -215,7 +215,7 @@
 
 
 
-  
+    
 
     <section id="contact" class="contact">
   <div class="contact-container">
@@ -261,6 +261,7 @@
 
 
 
+
     <script>
 
 document.querySelectorAll(".nav-links a").forEach(link => {
@@ -269,15 +270,16 @@ document.querySelectorAll(".nav-links a").forEach(link => {
     const target = document.querySelector(this.getAttribute("href"));
     target.scrollIntoView({ behavior: "smooth", block: "start" });
 
-    // DAGDAG: Auto close ng menu pag na-click sa mobile
+
     document.querySelector('.nav-links').classList.remove('active');
   });
 });
 
+
 const mobileMenu = document.getElementById('mobile-menu');
 const navLinks = document.querySelector('.nav-links');
 
-if(mobileMenu) { // para di mag error sa desktop
+if(mobileMenu) { 
   mobileMenu.addEventListener('click', () => {
     navLinks.classList.toggle('active');
   });
@@ -291,7 +293,6 @@ window.addEventListener("scroll", function() {
     nav.style.boxShadow = "none";
   }
 });
-
 
 const links = navLinks.querySelectorAll('a');
 const pill = navLinks.querySelector('.hover-pill');
@@ -309,9 +310,7 @@ navLinks.addEventListener('mouseleave', () => {
   pill.style.opacity = '0';
 });
 
-
 lucide.createIcons();
-
 
 const contactForm = document.querySelector('#contact-form');
 const formStatus = document.querySelector('#form-status');
@@ -337,6 +336,28 @@ contactForm.addEventListener('submit', async function (event) {
   } finally {
     submitButton.disabled = false;
   }
+});
+
+
+function toggleMenu() {
+    document.querySelector('.nav-links').classList.toggle('active');
+}
+
+document.querySelectorAll('.nav-links a').forEach(link => {
+    link.addEventListener('click', () => {
+        document.querySelector('.nav-links').classList.remove('active');
+    });
+});
+
+document.addEventListener('click', (e) => {
+    const navLinks = document.querySelector('.nav-links');
+    const menuToggle = document.querySelector('.menu-toggle');
+
+    if (navLinks.classList.contains('active') && 
+        !navLinks.contains(e.target) && 
+        !menuToggle.contains(e.target)) {
+        navLinks.classList.remove('active');
+    }
 });
 </script>
 
