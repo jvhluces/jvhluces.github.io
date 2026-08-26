@@ -67,9 +67,9 @@ nav {
   position: absolute;
   top: 8px;
   left: 8px;
-  height: calc(100% - 16px); /* FIX DITO */
-  background: rgba(96, 165, 250, 0.15); /* GINAWANG BLUE */
-  border: 1px solid #60a5fa; /* BLUE BORDER */
+  height: calc(100% - 16px);
+  background: rgba(96, 165, 250, 0.15);
+  border: 1px solid #60a5fa; 
   border-radius: 50px; 
   transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1); 
   z-index: 1; 
@@ -82,9 +82,9 @@ nav {
 section { 
   min-height: 100vh; 
   width: 100%; 
-  display: flex; /* OK lang to, io-override natin sa services */
+  display: flex; 
   justify-content: center; 
-  align-items: center; /* DINAGDAG KO TO PARA GITNA */
+  align-items: center; 
   scroll-snap-align: start; 
   padding: 100px 40px 40px; 
 } 
@@ -284,7 +284,7 @@ section {
 
 .services-container{ 
   display: grid; 
-  grid-template-columns: repeat(3, 1fr); /* 3 COLUMNS */
+  grid-template-columns: repeat(3, 1fr);
   gap: 30px; 
   max-width: 1100px; 
   margin: 0 auto; 
@@ -304,7 +304,7 @@ section {
   transform: translateY(-5px); 
 }
 
-.service-icon svg{ /* ITO YUNG MAGPAPAPUTI SA ICON */
+.service-icon svg{
   width: 28px;
   height: 28px;
   stroke: white;
@@ -375,7 +375,7 @@ section {
   background: #111;
   border: 1px solid #333;
   border-radius: 20px;
-  overflow: hidden; /* PARA HINDI LUMABAS YUNG IMAGE */
+  overflow: hidden; 
   text-align: left;
   transition: 0.3s;
   text-decoration: none;
@@ -393,7 +393,7 @@ section {
 .project-image img {
   width: 100%;
   height: 200px;
-  object-fit: cover; /* PARA HINDI MADISTORT */
+  object-fit: cover; 
   border-bottom: 1px solid #333;
 }
 
@@ -450,7 +450,7 @@ section {
 
 .contact {
   padding: 100px 0;
-  background: #0a0f1e; /* MAS MADILIM NG KONTI SA BG MO */
+  background: #0a0f1e;
 }
 
 .contact-container {
@@ -468,7 +468,7 @@ section {
 }
 
 .contact h2 span {
-  color: #00aaff; /* BLUE ACCENT MO */
+  color: #00aaff; 
 }
 
 .contact-info p {
@@ -541,7 +541,7 @@ section {
 }
 
 .contact-form button {
-  background: #00aaff; /* BLUE BUTTON MO */
+  background: #00aaff; 
   color: #0f172a;
   border: none;
   padding: 15px;
@@ -562,7 +562,7 @@ section {
 
 
   html {
-        scroll-snap-type: y mandatory; /* Ibalik natin pero ayusin */
+        scroll-snap-type: y mandatory; 
     }
 
    
@@ -586,13 +586,13 @@ section {
 
 
   body {
-        overflow-y: scroll; /* Force proper scroll snap */
+        overflow-y: scroll; 
     }
 
   .hero, .home, .hero-section { 
     display: flex !important;
-    flex-direction: column !important; /* Pababa */
-    align-items: center !important; /* I-center */
+    flex-direction: column !important; 
+    align-items: center !important;
     text-align: center;
     padding: 50px 20px;
     gap: 20px;
@@ -631,12 +631,12 @@ section {
 
 
  section {
-        min-height: 100vh !important; /* Ibalik yung full screen */
-        padding: 90px 20px 40px !important; /* 90px para sa nav */
-        scroll-snap-align: start; /* Dito sya hihinto kada section */
+        min-height: 100vh !important; 
+        padding: 90px 20px 40px !important; 
+        scroll-snap-align: start; 
         display: flex !important;
         flex-direction: column;
-        justify-content: center; /* I-center vertically yung laman */
+        justify-content: center; 
     }
 
  .hero {
@@ -647,20 +647,20 @@ section {
    .hero img {
     width: 170px !important;
     height: 170px !important;
-    border-radius: 50%; /* Bilog */
-    object-fit: cover; /* Para di ma-stretch yung pic */
-    box-shadow: 0 4px 15px rgba(0,0,0,0.2); /* Konting shadow para formal */
+    border-radius: 50%; 
+    object-fit: cover; 
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2); 
     margin-bottom: 10px;
-    order: 1; /* Sigurado na mauuna sya */
+    order: 1; 
   }
 
     .hero-text {
-    order: 2; /* Pangalawa si text */
+    order: 2; 
   }
 
   
     .hero h1 {
-        font-size: 32px !important; /* Liitan konti */
+        font-size: 32px !important; 
     }
 
   .hero p {
@@ -668,23 +668,23 @@ section {
     margin: 5px 0;
   }
 
-  /* I-CENTER YUNG BUTTONS */
+
   .hero-buttons {
     display: flex;
     justify-content: center;
     gap: 12px;
     margin-top: 15px;
-    order: 3; /* Pangatlo yung buttons */
+    order: 3;
   }
   
   .hero-buttons a {
-    padding: 12px 24px; /* Mas malaki para madali i-tap */
+    padding: 12px 24px; 
   }
  .socials {
     flex-direction: column; 
   }
   .socials a {
-    width: 80%; /* Mas malaki para madali i-tap ng daliri */
+    width: 80%; 
     margin: 0 auto;
   }
 
@@ -737,16 +737,12 @@ section {
     font-size: 42px; 
   }
   .services-container{
-    grid-template-columns: 1fr; /* 1 COLUMN LANG SA MOBILE */
+    grid-template-columns: 1fr; 
   }
    .contact-container {
     grid-template-columns: 1fr;
   }
 
-  /* ========== MOBILE BURGER MENU ONLY ========== */
-
-  
-  /* IPakita yung burger sa mobile lang */
   .menu-toggle {
     display: block;
     cursor: pointer;
@@ -762,13 +758,12 @@ section {
     border-radius: 2px;
   }
 
-  /* ITAGO YUNG NAV-LINKS SA MOBILE */
   .nav-links {
     position: fixed;
-    left: -100%; /* Nakatago muna */
+    left: -100%; 
     top: 70px;
     flex-direction: column;
-    background: rgba(15, 23, 42, 0.98); /* Same bg sa nav mo */
+    background: rgba(15, 23, 42, 0.98); 
     backdrop-filter: blur(10px);
     width: 100%;
     text-align: center;
@@ -778,12 +773,10 @@ section {
     border-bottom: 1px solid rgba(255, 255, 255, 0.05);
   }
 
-  /* PAG CLICK SA BURGER, LALABAS */
   .nav-links.active {
     left: 0;
   }
 
-  /* ITAGO YUNG HOVER PILL SA MOBILE KASI PANGET PAG DROPDOWN */
   .hover-pill {
     display: none !important;
   }
@@ -793,7 +786,7 @@ section {
   
   }
    .about-section {
-        padding-top: 90px !important; /* Same padding para pantay */
+        padding-top: 90px !important;
     }
   .about-image{
     display: none !important;
